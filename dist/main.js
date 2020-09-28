@@ -158,6 +158,42 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst contact = () => {\n  const conBody = `\n  <div class=\"tab-pane fade p-4\" id=\"nav-contact\" role=\"tabpanel\" aria-labelledby=\"nav-contact-tab\">\n    <form id=\"contact-form\">\n      <div class=\"d-flex\">\n        <div class=\"labels mr-2\">\n          <div>Your Request: </div>\n          <div class=\"mt-3\">Email here: </div>\n        </div>\n        <div class=\"entries\">\n          <input type=\"text\" id=\"request-box\">\n          <input type=\"email\" id=\"email-box\" class=\"mt-2\">\n        </div>\n      </div>\n      <button type=\"submit\" class=\"mt-3 btn btn-primary\">Submit</button>\n    </form>\n</div>\n</div>`;\n  return conBody;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (contact);\n\n//# sourceURL=webpack:///./src/contact.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst header = (contentBox) => {\n  const h1 = document.createElement('h1');\n  h1.id = 'header';\n  h1.textContent = 'A Great Restaurant';\n  contentBox.appendChild(h1);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (header);\n\n//# sourceURL=webpack:///./src/header.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst home = () => {\n  const homeBody = `\n  <div class=\"tab-content\" id=\"nav-tabContent\">\n  <div class=\"tab-pane fade show active p-2\" id=\"nav-home\" role=\"tabpanel\" aria-labelledby=\"nav-home-tab\">\n    <div id=\"home-img\"></div>\n    <p>\n      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis in fuga corporis, itaque, natus nihil commodi dolorem beatae aliquid dolor magni quasi atque cumque. Consequatur fugit iste sint nemo!\n    </p>\n  </div>`;\n  return homeBody;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (home);\n\n//# sourceURL=webpack:///./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -166,19 +202,19 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _majors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./majors */ \"./src/majors.js\");\n\n\n\nconst loadContent = () => {\n  const contentBox = document.querySelector('#content');\n  Object(_majors__WEBPACK_IMPORTED_MODULE_1__[\"header\"])(contentBox);\n  Object(_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(contentBox);\n  contentBox.appendChild(Object(_majors__WEBPACK_IMPORTED_MODULE_1__[\"pageBody\"])());\n};\n\nloadContent();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _pageBody__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pageBody */ \"./src/pageBody.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n\n\n\n\nconst loadContent = () => {\n  const contentBox = document.querySelector('#content');\n  Object(_header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(contentBox);\n  Object(_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(contentBox);\n  contentBox.appendChild(Object(_pageBody__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n};\n\nloadContent();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/majors.js":
-/*!***********************!*\
-  !*** ./src/majors.js ***!
-  \***********************/
-/*! exports provided: header, pageBody */
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"header\", function() { return header; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pageBody\", function() { return pageBody; });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst header = (contentBox) => {\n  const h1 = document.createElement('h1');\n  h1.id = 'header';\n  h1.textContent = 'A Great Restaurant';\n  contentBox.appendChild(h1);\n};\n\nconst pageBody = () => {\n  const wrapper = document.createElement('div');\n  const content = `<div class=\"tab-content\" id=\"nav-tabContent\">\n <div class=\"tab-pane fade show active p-2\" id=\"nav-home\" role=\"tabpanel\" aria-labelledby=\"nav-home-tab\">\n   <div id=\"home-img\"></div>\n   <p>\n     Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis in fuga corporis, itaque, natus nihil commodi dolorem beatae aliquid dolor magni quasi atque cumque. Consequatur fugit iste sint nemo!\n   </p>\n </div>\n\n <div class=\"tab-pane fade\" id=\"nav-profile\" role=\"tabpanel\" aria-labelledby=\"nav-profile-tab\">\n   <div class=\"menu-items\">\n     <div class=\"menu-itm\">\n       <div class=\"menu-img\"></div>\n       <span class=\"d-block\">Pancakes</span>\n     </div>\n     <div class=\"menu-itm\">\n       <div class=\"menu-img\"></div>\n       <span class=\"d-block\">IceCream</span>\n     </div>\n     <div class=\"menu-itm\">\n       <div class=\"menu-img\"></div>\n       <span class=\"d-block\">Candy</span>\n     </div>\n   </div>\n </div>\n\n <div class=\"tab-pane fade p-4\" id=\"nav-contact\" role=\"tabpanel\" aria-labelledby=\"nav-contact-tab\">\n   <form id=\"contact-form\">\n     <div class=\"d-flex\">\n       <div class=\"labels mr-2\">\n         <div>Your Request: </div>\n         <div class=\"mt-3\">Email here: </div>\n       </div>\n       <div class=\"entries\">\n         <input type=\"text\" id=\"request-box\">\n         <input type=\"email\" id=\"email-box\" class=\"mt-2\">\n       </div>\n     </div>\n     <button type=\"submit\" class=\"mt-3 btn btn-primary\">Submit</button>\n   </form>\n </div>\n</div>`;\n\n  wrapper.innerHTML += content;\n  return wrapper;\n};\n\n\n\n\n//# sourceURL=webpack:///./src/majors.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst menu = () => {\n  const menuBody = `<div class=\"tab-pane fade\" id=\"nav-profile\" role=\"tabpanel\" aria-labelledby=\"nav-profile-tab\">\n  <div class=\"menu-items\">\n    <div class=\"menu-itm\">\n      <div class=\"menu-img\"></div>\n      <span class=\"d-block\">Pancakes</span>\n    </div>\n    <div class=\"menu-itm\">\n      <div class=\"menu-img\"></div>\n      <span class=\"d-block\">IceCream</span>\n    </div>\n    <div class=\"menu-itm\">\n      <div class=\"menu-img\"></div>\n      <span class=\"d-block\">Candy</span>\n    </div>\n  </div>\n</div>`;\n  return menuBody;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu);\n\n//# sourceURL=webpack:///./src/menu.js?");
 
 /***/ }),
 
@@ -191,6 +227,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst navBar = (contentBox) => {\n  const div = document.createElement('div');\n  const nav = `<nav>\n  <div class=\"nav nav-tabs\" id=\"nav-tab\" role=\"tablist\">\n    <a class=\"nav-link active\" id=\"nav-home-tab\" data-toggle=\"tab\" href=\"#nav-home\" role=\"tab\" aria-controls=\"nav-home\" aria-selected=\"true\">Home</a>\n    <a class=\"nav-link\" id=\"nav-profile-tab\" data-toggle=\"tab\" href=\"#nav-profile\" role=\"tab\" aria-controls=\"nav-profile\" aria-selected=\"false\">Menu</a>\n    <a class=\"nav-link\" id=\"nav-contact-tab\" data-toggle=\"tab\" href=\"#nav-contact\" role=\"tab\" aria-controls=\"nav-contact\" aria-selected=\"false\">Contact</a>\n  </div></nav>`;\n  div.innerHTML += nav;\n  contentBox.appendChild(div);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (navBar);\n\n//# sourceURL=webpack:///./src/navbar.js?");
+
+/***/ }),
+
+/***/ "./src/pageBody.js":
+/*!*************************!*\
+  !*** ./src/pageBody.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style.css */ \"./style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\n\n\n\n\nconst pageBody = () => {\n  const wrapper = document.createElement('div');\n  const content = `\n    ${Object(_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()}\n    ${Object(_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()} \n    ${Object(_contact__WEBPACK_IMPORTED_MODULE_3__[\"default\"])()}\n    `;\n\n  wrapper.innerHTML += content;\n  return wrapper;\n};\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (pageBody);\n\n//# sourceURL=webpack:///./src/pageBody.js?");
 
 /***/ }),
 

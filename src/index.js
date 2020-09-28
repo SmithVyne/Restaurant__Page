@@ -1,5 +1,6 @@
 import navBar from './navbar';
-import { header, pageBody } from './majors';
+import pageBody from './pageBody';
+import header from './header';
 
 const loadContent = () => {
   const contentBox = document.querySelector('#content');
