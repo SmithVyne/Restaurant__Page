@@ -1,3 +1,5 @@
+import '../style.css';
+
 const navBar = (contentBox) => {
   contentBox.innerHTML += `<nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">

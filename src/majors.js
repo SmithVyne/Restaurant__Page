@@ -1,3 +1,5 @@
+import '../style.css';
+
 const header = (contentBox) => {
   contentBox.innerHTML = `<h1 id="header">
   A Great Restaurant
