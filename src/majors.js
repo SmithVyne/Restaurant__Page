@@ -1,13 +1,15 @@
 import '../style.css';
 
 const header = (contentBox) => {
-  contentBox.innerHTML = `<h1 id="header">
-  A Great Restaurant
-</h1>`;
+  const h1 = document.createElement('h1');
+  h1.id = 'header';
+  h1.textContent = 'A Great Restaurant';
+  contentBox.appendChild(h1);
 };
 
-const pageBody = (contentBox) => {
-  contentBox.innerHTML += `<div class="tab-content" id="nav-tabContent">
+const pageBody = () => {
+  const wrapper = document.createElement('div');
+  const content = `<div class="tab-content" id="nav-tabContent">
  <div class="tab-pane fade show active p-2" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
    <div id="home-img"></div>
    <p>
@@ -48,6 +50,9 @@ const pageBody = (contentBox) => {
    </form>
  </div>
 </div>`;
+
+  wrapper.innerHTML += content;
+  return wrapper;
 };
 
 

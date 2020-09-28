@@ -5,7 +5,7 @@ const loadContent = () => {
   const contentBox = document.querySelector('#content');
   header(contentBox);
   navBar(contentBox);
-  pageBody(contentBox);
+  contentBox.appendChild(pageBody());
 };
 
 loadContent();

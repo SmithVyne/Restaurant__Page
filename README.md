@@ -17,6 +17,7 @@ Follow the steps below to test the project locally. First ensure you have a vers
 2. Navigate to the project directory `cd Restaurant__Page`.
 3. Install project dependencies `npm install`
 4. Run `npm run webpack` to compile a development build and start watching for any changes too.
+5. visit `http://localhost:8080/build/index.html` and voila!!!.
 
 👤 **Smith Nkereuwem**
 
