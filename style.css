@@ -1,0 +1,64 @@
+body {
+  width: 100%;
+  background-color: #074f57;
+}
+
+#content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+}
+
+#header {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 50px;
+}
+
+#home-img {
+  width: 100%;
+  height: 300px;
+  background: url('./img/kamir-restaurant.jpg');
+}
+
+#nav-profile {
+  text-align: start;
+  padding: 40px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-itm {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-img {
+  background: url('./img/lingua-restaurant.jpg') center center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#contact-form {
+  width: max-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.labels {
+  text-align: left;
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+}
